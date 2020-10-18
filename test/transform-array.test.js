@@ -56,7 +56,7 @@ describe('Transform array', () => {
                 [1, 2, 3, '--double-next'],
                 [1, 2, 3, '--discard-next']
             ];
-            
+
             cases.forEach(currCase => {
                 assert.deepStrictEqual(transform(currCase), [1, 2, 3]);
             });
